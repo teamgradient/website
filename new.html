@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" href="new.css">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">courses</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
+<div style="padding-left:16px">
+  <h2>Top Navigation Example</h2>
+  <p>Some content..</p>
+</div>
+<h1>Deeksha's institution</h1>
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="onlineedu.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="yellow.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="learn.jpg" style="width:100%">
+      
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+<p class="dotted">Deeksha's Advantage</p>
+<div class="row">
+    <div class="column" style="background-color:yellow;">
+      <h2>Teaching Methodology</h2>
+      <p>Concept & application
+         based learning
+        Interactive & engaging 
+        lectures Integrated approach
+         focusing on competitive
+          & school exams</p>
+    </div>
+    <div class="column" style="background-color:yellow">
+      <h2>Regular Tests & Assessments</h2>
+      <p>Detailed test analysis with error analysis report
+        Simulated tests based on latest exam pattern
+        Compete at national level with All India Aakash Test Series</p>
+    </div>
+    <div class="column" style="background-color:yellow;">
+      <h2>Feedback System</h2>
+      <p>Timely updates on performance & attendance
+        Query/ grievance redressal</p>
+    </div>
+
+  </div>
+  <div class="row1">
+    <div class="column1" style="background-color:yellow;">
+      <h2>Study Material
+    </h2>
+      <p>Well-researched & analysed
+        Comprehensive & meticulously designed
+        Based on latest syllabus & exam pattern</p>
+    </div>
+    <div class="column1" style="background-color:yellow;">
+      <h2>Doubt Clearing System</h2>
+      <p>One-to-one interactive session with subject experts
+        Detailed & simplified solutions
+        Video solutions for instant doubt resolution</p>
+    </div>
+    <div class="column1" style="background-color:yellow;">
+      <h2>Omni-channel Learning</h2>
+      <p>100% digitised classrooms across all branches / centres
+        Hybrid classrooms offering the best of classroom & online learning
+        Recorded video lectures</p>
+    </div>
+  </div>
+
+  <footer>
+    <i class="fas fa-clock"></i>
+
+    <p>Author: Deeksha</p>
+  </footer>
+</body>
+</html>
